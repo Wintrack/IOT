@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node server.js"
+    "start": "node server.js",
+    "build": ""
   },
   "author": "",
   "license": "ISC",
