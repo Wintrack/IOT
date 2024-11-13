@@ -1,3 +1,23 @@
 <!DOCTYPE html>
-
-<h1>Hi</h1>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page ESP avec Chip ID</title>
+</head>
+<body>
+<h1>Bienvenue sur l'ESP8266/ESP32</h1>
+<p>Le Chip ID de cet ESP est : <strong id="chipID">Chargement...</strong></p>
+ 
+  <script>
+    // Fonction pour récupérer le paramètre 'chipID' depuis l'URL
+    function getChipIDFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('chipID');  // Récupérer le paramètre chipID
+    }
+ 
+    // Afficher le Chip ID sur la page
+    document.getElementById('chipID').textContent = getChipIDFromURL();
+</script>
+</body>
+</html>
